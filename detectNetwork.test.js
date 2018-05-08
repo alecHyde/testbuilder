@@ -251,13 +251,14 @@ describe('Maestro', function() {
 describe('China UnionPay', function() {
   var expect = chai.expect;
 
-  var prefix6 = function() {
+  var callPrefix6 = function() {
     var arr = [];
     for(var i = 622126; i <= 622925; i++) {
       arr.push(i);
     }
     return arr;
   }
+  var prefix6 = callPrefix6();
   var baseCC6 = '1234567890';
 
   var prefix4 = [6282, 6283, 6284, 6285, 6286, 6287, 6288]
